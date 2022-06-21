@@ -1,79 +1,159 @@
-body{
+
+
+body {
   margin: 0;
+  padding: 0;
   font-size: 16px;
   font-family: Poppins;
-  background-color: hsl(0, 100%, 74%) ;
-  background-image: url("bg-intro-desktop.png");
-}
-/* left-box style */
-h1{
-width: 280px;
-color: white;
-}
-
-.main-box{
-  width: 70%;
-  font-family: Poppins;
-}
-.left-box{
-  float: left;
-  margin: auto;
-  text-align: left;
-  width: 50%;
-
-}
-.left-box p{
-  width: 500px;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("bg-intro-mobile.png");
   color: white;
-}
-/* right-box style */
-h3{
-  color: white;
-  width: 400px;
-}
-h3 span{
-  color: hsl(246, 25%, 77%);
-  font-weight: lighter;
-  padding: 12px 40px;
-}
-.right-head{
-  background-color: hsl(248, 32%, 49%);
-  border-radius: 4px;
-}
-.right-box{
-  float: left;
-  width: 50%;
   text-align: center;
 }
-.right-form{
-  background-color: white;
-  padding: 10px;
-  border-radius: 4px;
-}
-form{
 
+.main-box {
+  padding: 80px;
 }
-input{
-  width: 70%;
-  padding: 12px 20px;
-  margin: 8px 0;
+
+/* left-box style */
+
+h1{
+  margin: 50px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.left-box {
+  margin: 160px 0;
+}
+
+
+
+/* right-box style */
+
+
+p span {
+  color: hsl(246, 25%, 77%);
+}
+
+.form-head {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 20px;
+  padding: 30px 100px;
+  margin: 30px 0 60px;
+  box-shadow: 0 18px rgba(31, 30, 31, 0.34);
+}
+
+
+form {
+  background-color: white;
+  padding-top: 40px;
+  border-radius: 30px;
+  box-shadow: 0 18px rgba(31, 30, 31, 0.34);
+}
+
+form>p {
+  color: hsl(246, 25%, 77%);
+  font-size: 14px;
+  padding: 0 80px 50px;
+}
+
+p .terms-and-cons {
+  color: red;
+  font-weight: 600;
+}
+
+input[class="input"] {
+  width: 700px;
+  height: 120px;
+  padding: 12px 30px;
+  margin: 15px 40px;
   box-sizing: border-box;
   border: 2px solid hsl(246, 25%, 77%);
-  border-radius: 4px;
+  border-radius: 15px;
   font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
 }
-input:focus{
+
+input[type="submit"] {
+  width: 700px;
+  height: 120px;
+  padding: 12px 40px;
+  margin: 15px 40px;
+  box-sizing: border-box;
+  border: 2px solid hsl(154, 59%, 51%);
+  border-radius: 15px;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+}
+
+input[class="input"]:focus {
   outline: none;
   border: 3px solid hsl(248, 32%, 49%);
 }
-button{
-  width: 70%;
-  padding: 12px 40px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid hsl(154, 59%, 51%);
-  border-radius: 4px;
-  font-family: Poppins;
-  background-color: hsl(154, 59%, 51%);
-  color: white;
+
+/* Responsive style */
+@media screen and (min-width:1000px) {
+  body{
+    background-image: url("bg-intro-desktop.png");
+    padding: 50px 150px;
+  }
+  .main-box {
+    display: flex;
+    padding: 0;
+  }
+
+  .left-box {
+    width: 50%;
+    text-align: left;
+    margin: 170px 20px 50px 0;
+  }
+
+  h1 {
+    margin-left: 0;
+    margin-bottom: 30px;
+    font-size: 45px;
+  }
+  form>p {
+    font-size: 14px;
+    padding: 0 10px 50px;
+    margin: 0;
+  }
+  .right-box {
+    width: 50%;
+  }
+  .form-head {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 8px;
+    padding: 15px 40px;
+    margin: 10px 0 40px;
+    box-shadow: 0 12px rgba(31, 30, 31, 0.34);
+  }
+  form {
+    width: 560px;
+    background-color: white;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px rgba(31, 30, 31, 0.34);
+  }
+  input[class="input"] {
+    width: 450px;
+    height: 60px;
+    padding: 12px 30px;
+    margin: 10px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  input[type="submit"] {
+    width: 450px;
+    height: 60px;
+    padding: 12px 30px;
+    margin: 10px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
 }
