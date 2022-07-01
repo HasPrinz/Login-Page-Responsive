@@ -90,6 +90,13 @@ input[type="submit"] {
   background-color: hsl(154, 59%, 51%);
   color: white;
 }
+input[type="submit"]:hover {
+ 
+  border: 2px solid hsl(154, 63%, 68%);
+ 
+  background-color: hsl(154, 63%, 68%);
+  
+}
 
 input[class="input"]:focus {
   outline: none;
