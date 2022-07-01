@@ -91,11 +91,9 @@ input[type="submit"] {
   color: white;
 }
 input[type="submit"]:hover {
- 
   border: 2px solid hsl(154, 63%, 68%);
- 
   background-color: hsl(154, 63%, 68%);
-  
+  cursor: pointer;
 }
 
 input[class="input"]:focus {
